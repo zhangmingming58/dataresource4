@@ -1,0 +1,14 @@
+#application-hikaricp.yml
+spring:
+#配置数据库连接
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/1702a?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+#配置驱动
+    driver-class-name: com.mysql.jdbc.Driver
+#账号密码
+    username: root
+    password: root
+    hikari:
+#配置hikari连接池
+      minimum-idle: 50
+      maximum-pool-size: 50

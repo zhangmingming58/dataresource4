@@ -1,0 +1,13 @@
+#application-druid.yml
+spring:
+#配置数据库连接
+  datasource:
+#驱动
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/1702a?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    data-username: root
+    data-password: root
+#配置druid
+    type: com.alibaba.druid.pool.DruidDataSource
+    maxActive: 50
+    initialSize: 50

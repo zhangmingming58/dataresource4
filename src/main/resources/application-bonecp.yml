@@ -1,0 +1,11 @@
+#application-bonecp.yml
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/1702a?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    data-username: root
+    data-password: root
+#配置bonecp
+    type: com.jolbox.bonecp.BoneCPDataSource
+    maxConnectionsPerPartition: 50
+    minConnectionsPerPartition: 50

@@ -1,0 +1,7 @@
+#设置需要用到的数据源
+spring:
+  profiles:
+    active: druid
+#设置mybatis配置路径
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
